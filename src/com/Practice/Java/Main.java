@@ -5,9 +5,95 @@ public class Main {
     public static void main(String[] args) {
 
 
+        //## If keyword and code block
+        boolean gameOver = true;
+        int score = 800;
+        int levelCompleted = 5;
+        int bonus = 100;
+
+        //scope is information inside of a code block.
+        if(gameOver) {
+            int finalScore = score + (levelCompleted * bonus);
+            finalScore += 1000;
+            System.out.println("Your final score was " + finalScore);
+        }
+
+/*
+        if(score < 5000 && score > 1000) {
+            System.out.println("Your score was less than 5000 but greater than 1000");
+        } else if(score < 1000) {
+            System.out.println("Your score was less than 1000");
+        } else {
+            System.out.println("Got here");
+        }
+*/
 
 
-        //##Operators
+       /* int secondScore = 10000;
+        int secondLevelCompleted = 8;
+        int secondBonus = 200;
+
+        if(gameOver) {
+           int FinalScore = secondScore + (secondLevelCompleted * secondBonus);
+           System.out.println("Your FinalScore was " + FinalScore);
+        }*/
+
+      score = 10000;
+      levelCompleted = 8;
+      bonus = 200;
+
+        if(gameOver) {
+            int finalScore = score + (levelCompleted * bonus);
+            System.out.println("Your final score was " + finalScore);
+        }
+
+
+
+        /*//##Statements, Whitespace, and Indenting
+
+        //The full line is a statement.  The expression and keyword is the statement.  Sometimes a statement
+        // does not have keyword.  Sometimes a statement is on more than one line.
+        //Java ignores the whitespace
+        int             myVarialbe =
+                50
+                ;
+
+
+        int myVariable = 50;
+        myVariable++;
+        myVariable--;
+        System.out.println("This is a test");
+
+        System.out.println("This is" +
+                " another" +
+                " still more");
+
+        int anotherVariable = 50; myVariable--; System.out.println("This is another one");*/
+
+
+
+       /* //## Keywords and Expressions
+        //https://en.wikipedia.org/wiki/List_of_Java_keywords
+
+        //blue highlighted words are keywords;
+        //everything that is not a keyword is part of the expression.  With the exception of () and {} and ;
+        //the word after a keyword is the variable.
+        //Numbers are literals
+        //String, char, double, float, byte,short, int, long, boolean are all primitives.
+        //The operators are  +, -, *, /, =, >=, <=, ++, -- and more.
+        //Operands are literals on either side of an operator like 10 + 20; 10 and 20 are operands.
+
+        double kilometeres = (100 * 1.609344);
+        int highScore = 50;
+
+        if(highScore == 50){
+            System.out.println("This is an expression");
+        }
+
+
+*/
+
+   /*     //##Operators
 
         int result = 1 + 2;
         System.out.println("1 + 2= " + result);
@@ -84,7 +170,7 @@ public class Main {
         System.out.println(remainderVariable);
         if(remainderVariable <= 20)
             System.out.println("Total was over the limit");
-        //http://www.cs.bilkent.edu.tr/~guvenir/courses/CS101/op_precedence.html
+        //http://www.cs.bilkent.edu.tr/~guvenir/courses/CS101/op_precedence.html*/
 
 
         //##Strings
